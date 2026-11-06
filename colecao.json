@@ -12,7 +12,7 @@
           "script": {
             "type": "text/javascript",
             "exec": [
-              "pm.test(\"Status code e 200 - Teste do Trio\", function () {\r\n    pm.response.to.have.status(200);\r\n})",
+              "pm.test(\"Status code e 200 - Teste do Trio\", function () {\r\n    pm.response.to.have.status(200);\r\n});",
               "pm.test(\"O usuário tem id 1\", () => {",
               "  pm.expect(pm.response.json().id).to.eql(1)",
               "})",
